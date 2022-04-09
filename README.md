@@ -204,6 +204,3 @@ This will allow the build to proceed. The reason this happens is that the mingw3
 GCC libsanitizer failing to build
 Sometimes GCC can't build libsanitizer, if that happens append --disable-libsanitizer to the configure command.
 This only applies for building a hosted compiler.
-
-More advanced
-Using this simple cross compiler will be sufficient for quite some time, but at some point you will want the compiler to automatically include your own system headers and libraries. Building an OS-specific toolchain for your own operating system is the way to go from here.
