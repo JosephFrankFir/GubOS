@@ -5,7 +5,9 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1     | :white_check_mark: |
+| Dev2-0.1v| ✅ |
+| Dev1-0.1v | ✅|
+| 0.1     | :x: |
 
 
 ## Reporting a Vulnerability
