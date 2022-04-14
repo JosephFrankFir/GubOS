@@ -9,8 +9,8 @@
 | Bison | 	[1](https://ftp.gnu.org/gnu/bison/) |	bison |	sys-devel/bison| bison | bison | ? | base-devel |
 | Flex |	[2](https://github.com/westes/flex/releases) |	flex | sys-devel/flex | flex | flex |	? |	base-devel |
 | GMP |	[3](https://ftp.gnu.org/gnu/gmp/) |	libgmp3-dev	dev-libs/gmp |	gmp-devel |	libgmp-devel |	gmp	| gmp |
-| MPFR	| [5](https://ftp.gnu.org/gnu/mpfr/) |	libmpfr-dev	dev-libs/mpfr	mpfr-devel	libmpfr-devel	mpfr	mpfr
-| Texinfo |	[6](https://ftp.gnu.org/gnu/texinfo/) |	texinfo	sys-apps/texinfo	texinfo	texinfo	texinfo	base-devel
+| MPFR	| [5](https://ftp.gnu.org/gnu/mpfr/) |	libmpfr-dev |	dev-libs/mpfr |	mpfr-devel |	libmpfr-devel |	mpfr |	mpfr |
+| Texinfo |	[6](https://ftp.gnu.org/gnu/texinfo/) |	texinfo |	sys-apps/texinfo |	texinfo |	texinfo |	texinfo |	base-devel |
 | CLooG (Optional) |	[CLooG](https://www.cloog.org/) |	libcloog-isl-dev | dev-libs/cloog |	cloog-devel |	libcloog-isl-devel | N/A | N/A |
 | ISL (Optional) |	[7](http://isl.gforge.inria.fr/) |	libisl-dev | dev-libs/isl |	isl-devel |	libisl-devel |	N/A |	N/A |
 
