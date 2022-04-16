@@ -13,7 +13,7 @@
  	outb(0x42, (uint8_t) (Div >> 8));
  
     //And play the sound using the PC speaker
- 	tmp = inb(0x61);
+ 	tmp = insb(0x61);
   	if (tmp != (tmp | 3)) {
  		outb(0x61, tmp | 3);
  	}
@@ -21,7 +21,7 @@
  
  //make it shutup
  static void speaker_nosound() {
- 	uint8_t tmp = inb(0x61) & 0xFC;
+ 	uint8_t tmp = insb(0x61) & 0xFC;
  
  	outb(0x61, tmp);
  }
