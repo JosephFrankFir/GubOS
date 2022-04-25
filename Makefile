@@ -1,12 +1,21 @@
-FILES = ./build/kernel.asm.o ./build/kernel.o ./build/idt/idt.asm.o ./build/idt/idt.o ./build/memory/memory.o ./build/io/io.asm.o ./build/memory/heap/heap.o ./build/memory/heap/kheap.o ./build/memory/paging/paging.o ./build/memory/paging/paging.asm.o ./build/disk/disk.o ./build/fs/pparser.o ./build/string/string.o ./build/disk/streamer.o
+FILES = ./build/kernel.asm.o ./build/kernel.o ./build/idt/idt.asm.o ./build/idt/idt.o ./build/memory/memory.o ./build/io/io.asm.o ./build/memory/heap/heap.o ./build/memory/heap/kheap.o ./build/memory/paging/paging.o ./build/memory/paging/paging.asm.o ./build/disk/disk.o ./build/fs/pparser.o ./build/string/string.o ./build/disk/streamer.o ./build/fs/file.o
 INCLUDES = -I./src
 FLAGS = -g -ffreestanding -falign-jumps -falign-functions -falign-labels -falign-loops -fstrength-reduce -fomit-frame-pointer -finline-functions -Wno-unused-function -fno-builtin -Werror -Wno-unused-label -Wno-cpp -Wno-unused-parameter -nostdlib -nostartfiles -nodefaultlibs -Wall -O0 -Iinc
+VERSION = 0.4
+PATCHLEVEL = 0
+SUBLEVEL = 0
+EXTRAVERSION = 0
+NAME = JosephFrankFir
 
 all: ./bin/boot.bin ./bin/kernel.bin
 	rm -rf ./bin/os.bin
 	dd if=./bin/boot.bin >> ./bin/os.bin
 	dd if=./bin/kernel.bin >> ./bin/os.bin
-	dd if=/dev/zero bs=512 count=100 >> ./bin/os.bin
+	dd if=/dev/zero bs=1048576 count=16 >> ./bin/os.bin
+	sudo mount -t vfat ./bin/os.bin /mnt/d
+	# Copy a file over
+	sudo cp ./hello.txt /mnt/d
+	sudo umount /mnt/d	
 	@echo "\e[34m####### Finished compiling #######\e[0m"
 
 
@@ -54,11 +63,15 @@ all: ./bin/boot.bin ./bin/kernel.bin
 ./build/fs/pparser.o: ./src/fs/pparser.c
 	i686-elf-gcc $(INCLUDES) -I./src/fs $(FLAGS) -std=gnu99 -c ./src/fs/pparser.c -o ./build/fs/pparser.o
 
+./build/fs/file.o: ./src/fs/file.c
+	i686-elf-gcc $(INCLUDES) -I./src/fs $(FLAGS) -std=gnu99 -c ./src/fs/file.c -o ./build/fs/file.o
+
 ./build/string/string.o: ./src/string/string.c
 	i686-elf-gcc $(INCLUDES) -I./src/string $(FLAGS) -std=gnu99 -c ./src/string/string.c -o ./build/string/string.o
 
 ./build/disk/streamer.o: ./src/disk/streamer.c
 	i686-elf-gcc $(INCLUDES) -I./src/disk $(FLAGS) -std=gnu99 -c ./src/disk/streamer.c -o ./build/disk/streamer.o
+
 
 clean:
 	rm -rf ./bin/boot.bin
@@ -86,4 +99,20 @@ setup-iso:
 	dd if=./bin/os.bin of=./iso/gubos.iso
 	@echo "\e[34m####### Done #######\e[0m"
 
+help:
+	@echo  'Cleaning targets:'
+	@echo  '  clean		  - Remove most generated files but keep the config '
+	@echo  'Build:'
+	@echo '   setup-iso      - Setup iso file'
 
+read_docs:
+	nano README.md
+
+info:
+	@echo "\e[34mGubOS infos:\e[0m"
+	@echo ""
+	@echo "Contributors: $(NAME)"
+	@echo "Version: $(VERSION)"
+	@echo "Pach Level: $(PATCHLEVEL)"
+	@echo "Sub Level: $(SUBLEVEL)"
+	@echo "Extra Version: $(EXTRAVERSION)"
