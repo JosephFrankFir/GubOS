@@ -1,0 +1,427 @@
+
+
+Mon May  2 14:48:56 2022
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.16.0-kali7-amd64 (#1 SMP PREEMPT Debian 5.16.18-1kali1 (2022-04-01)) x86_64
+Compiler: GCC 10.3
+ext2fs lib: 1.46.5, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.2
+User is not root!
+Hard disk list
+Disk /dev/sr0 - 2994 MB / 2855 MiB - 1462072 sectors (RO), sector size=2048 - VMware Virtual IDE CDROM Drive, S/N:10000000000000000001, FW:00000001
+
+
+TestDisk exited normally.
+sudo: unable to resolve host kali: Name or service not known
+Using locale 'en_US.UTF-8'.
+
+
+Mon May  2 14:49:02 2022
+Command line: TestDisk /debug
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.16.0-kali7-amd64 (#1 SMP PREEMPT Debian 5.16.18-1kali1 (2022-04-01)) x86_64
+Compiler: GCC 10.3
+ext2fs lib: 1.46.5, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.2
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+/dev/sr0 is not an ATA disk
+Hard disk list
+Disk /dev/sda - 53 GB / 50 GiB - CHS 6527 255 63, sector size=512 - VMware, VMware Virtual S, FW:1.0
+Disk /dev/sr0 - 2994 MB / 2855 MiB - 1462072 sectors (RO), sector size=2048 - VMware Virtual IDE CDROM Drive, S/N:10000000000000000001, FW:00000001
+
+Partition table type (auto): Intel
+Disk /dev/sda - 53 GB / 50 GiB - VMware, VMware Virtual S
+Partition table type: Intel
+
+Interface Advanced
+Geometry from i386 MBR: head=255 sector=2
+BAD_RS LBA=2048 64512
+ 1 * Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+ 2 E extended              6402 168 37  6526 243 53    1996802
+ 5 L Linux Swap            6402 168 39  6526 243 53    1996800
+     SWAP2 version 1, pagesize=4096, 1022 MB / 975 MiB
+
+
+dir_partition inode=2
+ 1 * Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+Directory /
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 .
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 ..
+      11 drwx------     0      0     16384  7-Apr-2022 12:22 lost+found
+ 1835009 drwxr-xr-x     0      0     12288  2-May-2022 13:58 etc
+  786433 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 media
+      18 lrwxrwxrwx     0      0        31  7-Apr-2022 12:26 vmlinuz.old
+  262145 drwxr-xr-x     0      0      4096 28-Apr-2022 08:31 var
+      12 lrwxrwxrwx     0      0         7  7-Apr-2022 12:22 bin
+  524289 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 usr
+      13 lrwxrwxrwx     0      0         8  7-Apr-2022 12:22 sbin
+      14 lrwxrwxrwx     0      0         7  7-Apr-2022 12:22 lib
+      15 lrwxrwxrwx     0      0         9  7-Apr-2022 12:22 lib32
+      16 lrwxrwxrwx     0      0         9  7-Apr-2022 12:22 lib64
+      17 lrwxrwxrwx     0      0        10  7-Apr-2022 12:22 libx32
+ 2883585 drwxr-xr-x     0      0      4096 23-Apr-2022 12:15 boot
+ 1048577 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 dev
+ 3014657 drwxr-xr-x     0      0      4096 22-Apr-2022 12:25 home
+  131073 drwxr-xr-x     0      0      4096  3-Feb-2022 16:41 proc
+  393217 drwx------     0      0      4096 30-Apr-2022 16:33 root
+  917505 drwxr-xr-x     0      0      4096  7-Apr-2022 13:50 run
+ 1179649 drwxr-xr-x     0      0      4096  3-Feb-2022 16:41 sys
+  655361 drwxrwxrwt     0      0      4096  2-May-2022 14:46 tmp
+ 1310721 drwxr-xr-x     0      0      4096 22-Apr-2022 11:24 mnt
+ 1441793 drwxr-xr-x     0      0      4096  7-Apr-2022 13:16 srv
+ 1703937 drwxr-xr-x     0      0      4096 27-Apr-2022 23:05 opt
+ 2752513 drwx------     0      0      4096  7-Apr-2022 13:18 .cache
+      19 lrwxrwxrwx     0      0        34  7-Apr-2022 12:26 initrd.img.old
+      44 lrwxrwxrwx     0      0        31 19-Apr-2022 16:42 vmlinuz
+      20 lrwxrwxrwx     0      0        34 19-Apr-2022 16:42 initrd.img
+
+dir_partition inode=11
+ 1 * Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+Directory /lost+found
+      11 drwx------     0      0     16384  7-Apr-2022 12:22 .
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 ..
+Directory /
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 .
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 ..
+      11 drwx------     0      0     16384  7-Apr-2022 12:22 lost+found
+ 1835009 drwxr-xr-x     0      0     12288  2-May-2022 13:58 etc
+  786433 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 media
+      18 lrwxrwxrwx     0      0        31  7-Apr-2022 12:26 vmlinuz.old
+  262145 drwxr-xr-x     0      0      4096 28-Apr-2022 08:31 var
+      12 lrwxrwxrwx     0      0         7  7-Apr-2022 12:22 bin
+  524289 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 usr
+      13 lrwxrwxrwx     0      0         8  7-Apr-2022 12:22 sbin
+      14 lrwxrwxrwx     0      0         7  7-Apr-2022 12:22 lib
+      15 lrwxrwxrwx     0      0         9  7-Apr-2022 12:22 lib32
+      16 lrwxrwxrwx     0      0         9  7-Apr-2022 12:22 lib64
+      17 lrwxrwxrwx     0      0        10  7-Apr-2022 12:22 libx32
+ 2883585 drwxr-xr-x     0      0      4096 23-Apr-2022 12:15 boot
+ 1048577 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 dev
+ 3014657 drwxr-xr-x     0      0      4096 22-Apr-2022 12:25 home
+  131073 drwxr-xr-x     0      0      4096  3-Feb-2022 16:41 proc
+  393217 drwx------     0      0      4096 30-Apr-2022 16:33 root
+  917505 drwxr-xr-x     0      0      4096  7-Apr-2022 13:50 run
+ 1179649 drwxr-xr-x     0      0      4096  3-Feb-2022 16:41 sys
+  655361 drwxrwxrwt     0      0      4096  2-May-2022 14:46 tmp
+ 1310721 drwxr-xr-x     0      0      4096 22-Apr-2022 11:24 mnt
+ 1441793 drwxr-xr-x     0      0      4096  7-Apr-2022 13:16 srv
+ 1703937 drwxr-xr-x     0      0      4096 27-Apr-2022 23:05 opt
+ 2752513 drwx------     0      0      4096  7-Apr-2022 13:18 .cache
+      19 lrwxrwxrwx     0      0        34  7-Apr-2022 12:26 initrd.img.old
+      44 lrwxrwxrwx     0      0        31 19-Apr-2022 16:42 vmlinuz
+      20 lrwxrwxrwx     0      0        34 19-Apr-2022 16:42 initrd.img
+
+dir_partition inode=11
+ 1 * Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+Directory /lost+found
+      11 drwx------     0      0     16384  7-Apr-2022 12:22 .
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 ..
+Directory /
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 .
+       2 drwxr-xr-x     0      0      4096 19-Apr-2022 16:42 ..
+      11 drwx------     0      0     16384  7-Apr-2022 12:22 lost+found
+ 1835009 drwxr-xr-x     0      0     12288  2-May-2022 13:58 etc
+  786433 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 media
+      18 lrwxrwxrwx     0      0        31  7-Apr-2022 12:26 vmlinuz.old
+  262145 drwxr-xr-x     0      0      4096 28-Apr-2022 08:31 var
+      12 lrwxrwxrwx     0      0         7  7-Apr-2022 12:22 bin
+  524289 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 usr
+      13 lrwxrwxrwx     0      0         8  7-Apr-2022 12:22 sbin
+      14 lrwxrwxrwx     0      0         7  7-Apr-2022 12:22 lib
+      15 lrwxrwxrwx     0      0         9  7-Apr-2022 12:22 lib32
+      16 lrwxrwxrwx     0      0         9  7-Apr-2022 12:22 lib64
+      17 lrwxrwxrwx     0      0        10  7-Apr-2022 12:22 libx32
+ 2883585 drwxr-xr-x     0      0      4096 23-Apr-2022 12:15 boot
+ 1048577 drwxr-xr-x     0      0      4096  7-Apr-2022 12:22 dev
+ 3014657 drwxr-xr-x     0      0      4096 22-Apr-2022 12:25 home
+  131073 drwxr-xr-x     0      0      4096  3-Feb-2022 16:41 proc
+  393217 drwx------     0      0      4096 30-Apr-2022 16:33 root
+  917505 drwxr-xr-x     0      0      4096  7-Apr-2022 13:50 run
+ 1179649 drwxr-xr-x     0      0      4096  3-Feb-2022 16:41 sys
+  655361 drwxrwxrwt     0      0      4096  2-May-2022 14:46 tmp
+ 1310721 drwxr-xr-x     0      0      4096 22-Apr-2022 11:24 mnt
+ 1441793 drwxr-xr-x     0      0      4096  7-Apr-2022 13:16 srv
+ 1703937 drwxr-xr-x     0      0      4096 27-Apr-2022 23:05 opt
+ 2752513 drwx------     0      0      4096  7-Apr-2022 13:18 .cache
+      19 lrwxrwxrwx     0      0        34  7-Apr-2022 12:26 initrd.img.old
+      44 lrwxrwxrwx     0      0        31 19-Apr-2022 16:42 vmlinuz
+      20 lrwxrwxrwx     0      0        34 19-Apr-2022 16:42 initrd.img
+Change partition type:
+ 1 * Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+search_superblock
+
+recover_EXT2: s_block_group_nr=0/392, s_mnt_count=57/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Last mount time:    Thu Apr 28 08:16:00 2022
+Ext2 superblock found at sector 2 (block=0, blocksize=4096)
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 262144 (block=32768, blocksize=4096)
+
+block_group_nr 3
+
+recover_EXT2: "e2fsck -b 98304 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=3/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 786432 (block=98304, blocksize=4096)
+
+block_group_nr 5
+
+recover_EXT2: "e2fsck -b 163840 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=5/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 1310720 (block=163840, blocksize=4096)
+
+block_group_nr 7
+
+recover_EXT2: "e2fsck -b 229376 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=7/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 1835008 (block=229376, blocksize=4096)
+
+block_group_nr 9
+
+recover_EXT2: "e2fsck -b 294912 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=9/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 2359296 (block=294912, blocksize=4096)
+
+block_group_nr 25
+
+recover_EXT2: "e2fsck -b 819200 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=25/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 6553600 (block=819200, blocksize=4096)
+
+block_group_nr 27
+
+recover_EXT2: "e2fsck -b 884736 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=27/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 7077888 (block=884736, blocksize=4096)
+
+block_group_nr 49
+
+recover_EXT2: "e2fsck -b 1605632 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=49/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 12845056 (block=1605632, blocksize=4096)
+
+block_group_nr 81
+
+recover_EXT2: "e2fsck -b 2654208 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=81/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Ext2 superblock found at sector 21233664 (block=2654208, blocksize=4096)
+  Linux                    0  32 33  6402 136  6  102854656
+superblock 0, blocksize=4096 []
+superblock 32768, blocksize=4096 []
+superblock 98304, blocksize=4096 []
+superblock 163840, blocksize=4096 []
+superblock 229376, blocksize=4096 []
+superblock 294912, blocksize=4096 []
+superblock 819200, blocksize=4096 []
+superblock 884736, blocksize=4096 []
+superblock 1605632, blocksize=4096 []
+superblock 2654208, blocksize=4096 []
+
+To repair the filesystem using alternate superblock, run
+fsck.ext4 -p -b superblock -B blocksize device
+
+Analyse Disk /dev/sda - 53 GB / 50 GiB - CHS 6527 255 63
+Geometry from i386 MBR: head=255 sector=2
+BAD_RS LBA=2048 64512
+Current partition structure:
+ 1 * Linux                    0  32 33  6402 136  6  102854656
+
+Bad relative sector.
+ 2 E extended              6402 168 37  6526 243 53    1996802
+ 5 L Linux Swap            6402 168 39  6526 243 53    1996800
+
+search_part()
+Disk /dev/sda - 53 GB / 50 GiB - CHS 6527 255 63
+
+recover_EXT2: s_block_group_nr=0/392, s_mnt_count=57/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Last mount time:    Thu Apr 28 08:16:00 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+     Linux Swap            6402 168 39  6526 243 37    1996784
+     SWAP2 version 1, pagesize=4096, 1022 MB / 974 MiB
+
+Results
+   * Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+   P Linux Swap            6402 168 39  6526 243 53    1996800
+     SWAP2 version 1, pagesize=4096, 1022 MB / 975 MiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 102854656 linear /dev/sda 2048" | dmsetup create test0
+echo "0 1996800 linear /dev/sda 102858752" | dmsetup create test1
+
+interface_write()
+ 1 * Linux                    0  32 33  6402 136  6  102854656
+ 2 P Linux Swap            6402 168 39  6526 243 53    1996800
+
+search_part()
+Disk /dev/sda - 53 GB / 50 GiB - CHS 6527 255 63
+
+recover_EXT2: s_block_group_nr=0/392, s_mnt_count=57/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+Last mount time:    Thu Apr 28 08:16:00 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 52 GB / 49 GiB
+
+block_group_nr 3
+
+recover_EXT2: "e2fsck -b 98304 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=3/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 52 GB / 49 GiB
+
+block_group_nr 5
+
+recover_EXT2: "e2fsck -b 163840 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=5/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 52 GB / 49 GiB
+
+block_group_nr 7
+
+recover_EXT2: "e2fsck -b 229376 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=7/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 52 GB / 49 GiB
+
+block_group_nr 9
+
+recover_EXT2: "e2fsck -b 294912 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=9/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 52 GB / 49 GiB
+
+block_group_nr 25
+
+recover_EXT2: "e2fsck -b 819200 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=25/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 52 GB / 49 GiB
+
+block_group_nr 27
+
+recover_EXT2: "e2fsck -b 884736 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=27/392, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12856832
+recover_EXT2: part_size 102854656
+Filesystem created: Thu Apr  7 12:22:03 2022
+     Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Backup_SB, 52 GB / 49 GiB
+     Linux Swap            6402 168 39  6526 243 37    1996784
+     SWAP2 version 1, pagesize=4096, 1022 MB / 974 MiB
+Search for partition aborted
+
+Results
+   * Linux                    0  32 33  6402 136  6  102854656
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 49 GiB
+   P Linux Swap            6402 168 39  6526 243 53    1996800
+     SWAP2 version 1, pagesize=4096, 1022 MB / 975 MiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 102854656 linear /dev/sda 2048" | dmsetup create test0
+echo "0 1996800 linear /dev/sda 102858752" | dmsetup create test1
+add_ext_part_i386: max
+add_ext_part_i386: min
+
+interface_write()
+ 1 E extended LBA             0  32 32  6402 254 63  102862148
+ 2 P Linux Swap            6402 168 39  6526 243 53    1996800
+ 5 L Linux                    0  32 33  6402 136  6  102854656
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+write_all_log_i386: CHS: 0/32/32,lba=2047
+
+TestDisk exited normally.
