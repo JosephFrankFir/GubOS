@@ -107,7 +107,7 @@ You need to decide where to install your new compiler. It is dangerous and a ver
 
 Please note that we build everything out of the source directory tree, as is considered good practice. Some packages only support building outside, some only inside and some both (but may not offer extensive checking with make). Building GCC inside the source directory tree fails miserably, at least for older versions.
 
-Preparation
+# Preparation
 ```
   export PREFIX="$HOME/opt/cross"
   export TARGET=i686-elf
