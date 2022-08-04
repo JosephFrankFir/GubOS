@@ -66,6 +66,16 @@ void print(const char* str)
         terminal_writechar(str[i], 15);
     }
 }
+
+void printc(const char* str, int colour)
+{
+    size_t len = strlen(str);
+    for (int i = 0; i < len; i++)
+    {
+        terminal_writechar(str[i], colour);
+    }
+}
+
 void kernel_main()
 {
     terminal_initialize();
